@@ -1,24 +1,8 @@
-# README
+demo: https://sleepy-beach-68423.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- bundle config build.pg --with-pg-config=`which pg_config`
+- rails new . -j webpack -d postgresql --skip-test --skip-bootsnap --skip-active-storage --skip-system-test --skip-listen --skip-keeps --skip-coffee --css bootstrap
+- ^^ Edit package.json with recommended instructions for building js/css ^^
+- bundle lock --add-platform x86_64-linux
+- heroku create --stack heroku-20
+- git push heroku main
