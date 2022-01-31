@@ -1,3 +1,5 @@
+Rails 7, Bootstrap 5 + React 17 + Webpack 5 (no webpacker)
+
 demo: https://sleepy-beach-68423.herokuapp.com/
 
 - `$ bundle config build.pg --with-pg-config=``which pg_config`` `
